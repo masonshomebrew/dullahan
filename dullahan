@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dullahan</name>
+		<description></description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/7a125m/5e_dullahan_player_race/">Wizards of the Coast</author>
+		<update version="0.1">
+			<file name="race-Dullahan.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-Dullahan.xml" />
+		</update>
+	</info>
+
+  <element name="Dullahan" type="Race" source="cat-i-on" id="ID_RACE_Dullahan">
+    <description>
+      
+      <h4>History</h4>
+      <p>A dullahan is a type of fey creature born of the Unseele Court. Dullahan resemble undead due to their headlessness but both head and body are kept alive by a curse. Inclined to travel at night by Unseele magic and their own appearance, grim folklore has sprung up about them. Dullahan are created by Unseele fey when they decapitate a human as part of a dark ritual.</p>
+
+      <h4>Physical Appearance</h4>
+      <p>Dullahan resembe humans with either dark tan or pale blue skin. Their eyes are black and their hair can be any natural color but is frequently black, gray, or white. Dullahan's mouthes are very wide and reach the sides of their heads.</p>
+
+      <h4>Dullahan Names</h4>
+      <p>Dullahan true names tend toward repeating syllables. They don't willingly reveal their true names to any but another Dullahan, simply because they don't like to appear foolish to the mortal races. Some dullahan take on human names or nicknames when interacting with other races.</p>
+      <p class="indent">Male: Mnoh Vis, Khit Tuc, Frur Tor, ...</p>
+      <p class="indent">Female: LaLa, MeiMei, ViVi, ...</p>
+      <p class="indent">Nicknames: Grim, Celty, Headless Nick, ...</p>
+
+      
+
+      <h4>Dullahan TRAITS</h4>
+      
+        <span class="feature">Ability Score Increase.</span>Your Charisma increases by 2 and one other ability score of your choice increases by 1.<br />
+        <span class="feature">Age.</span>Dullahans age and mature slowly, being mature at the age of 50 and living to be about 450 years old.<br />
+        <span class="feature">Alignment.</span>Dullahan tend toward neutral alignments.<br />
+        <span class="feature">Size.</span>Dullahan are about the height of a human. As a Dullahan you are a medium creature.<br />
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+        <span class="feature">Languages.</span>You can speak, read, and write Common and Sylvan.<br />
+      </p>
+      <div element="ID_RACE_VARIANT_Dullahan_VARIANT"/>
+    </description>
+    <sheet display="false" />
+    <setters>
+      <set name="height" modifier="2d10">5'4"</set>
+      <set name="weight" modifier="2d4">110 lb.</set>
+    </setters>
+    <rules>
+      <stat name="strength" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_Dullahan_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_Dullahan_VARIANT)" />
+      <stat name="dexterity" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_Dullahan_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_Dullahan_VARIANT)" />
+      <stat name="constitution" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_Dullahan_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_Dullahan_VARIANT)" />
+      <stat name="intelligence" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_Dullahan_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_Dullahan_VARIANT)" />
+      <stat name="wisdom" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_Dullahan_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_Dullahan_VARIANT)" />
+      <stat name="charisma" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_Dullahan_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_Dullahan_VARIANT)" />      
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>	  
+      <grant type="Language" id="ID_LANGUAGE_SEELIE"/>
+    </rules>
+  </element>
+  
+  
